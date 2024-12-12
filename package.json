@@ -1,0 +1,27 @@
+{
+  "name": "second-landing",
+  "version": "1.0.0",
+  "description": "",
+  "source": "src/index.html",
+  "scripts": {
+    "dev": "parcel",
+    "build": "parcel build"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "jquery": "^3.7.1"
+  },
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.13.2",
+    "concat": "^1.0.3",
+    "http-server": "^14.1.1",
+    "parcel": "^2.13.2",
+    "sass": "^1.82.0"
+  },
+  "targets": {
+    "default": {
+      "distDir": "./dist"
+    }
+  }
+}

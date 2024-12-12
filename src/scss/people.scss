@@ -1,0 +1,76 @@
+.people{
+    width: 100%;
+    padding: 114px 0;
+    background-color: $_white;
+}
+
+.people-card__wrapper{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 -15px;
+}
+
+.people-card{
+    width: 270px;
+    margin: 0 15px;
+}
+
+.people-card__img{
+    width: 100%;
+    height: 270px;
+    object-fit: cover;
+    margin-bottom: 30px;
+    img {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.people-card__name{
+    font-family: 'Raleway';
+    font-size: $_card_title;
+    text-transform: capitalize;
+    font-weight: 700;
+    color: $_title_subtitle;
+    text-align: left;
+    margin-bottom: 17px;
+}
+
+.people-card__profession{
+    font-family: 'Raleway';
+    font-size: $_title_subtitle;
+    text-transform: uppercase;
+    font-weight: 400;
+    color: $_button_active;
+    text-align: left;
+    margin-bottom: 18px;
+}
+
+.people-card__info{
+    margin-bottom: 38px;
+    p {
+        font-family: 'Raleway';
+        font-size: $_title_subtitle;
+        font-weight: 400;
+        color: $_desc_card;
+        text-align: left;
+    }
+}
+
+.people-card__some{
+    display: flex;
+    .people-card__icon{
+        display: block;
+        width: 39px;
+        height: 39px;
+        // overflow: hidden;
+        margin-right: 6px;
+    &:last-child{
+        margin-right: 0;
+    }
+    img{
+        width: 100%;
+        height: 100%;
+    }
+    }
+}
