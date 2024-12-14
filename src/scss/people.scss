@@ -2,27 +2,58 @@
     width: 100%;
     padding: 114px 0;
     background-color: $_white;
+    @media (max-width: 1024px){
+        padding: 78px 0;
+    }
+    @media (max-width:767px) {
+        padding: 55px 0;
+    }
+    // @media (max-width:575px) {
+    //     padding: 50px 0;
+    // }
+    @media (max-width: 320px) {
+        padding: 35px 0;
+    }
 }
 
 .people-card__wrapper{
     display: flex;
     justify-content: space-between;
     margin: 0 -15px;
+    @media (max-width:767px) {
+        flex-wrap: wrap;
+        justify-content: center; /* Центрируем карточки по горизонтали */
+        align-content: center; /* Центрируем строки по вертикали */
+    }
 }
 
 .people-card{
     width: 270px;
     margin: 0 15px;
+    display: flex;
+    flex-direction: column;
+    @media (max-width:767px) {
+        margin-bottom: 56px;
+    }
 }
 
 .people-card__img{
-    width: 100%;
-    height: 270px;
-    object-fit: cover;
+    overflow: hidden;
     margin-bottom: 30px;
+    position: relative;
+    aspect-ratio: 1/1;
+    width: 100%;
+    @media (max-width:1024px){
+        margin-bottom: 25px;
+    }
     img {
         width: 100%;
         height: 100%;
+        object-fit: cover;
+        object-position: center;
+        position: absolute;
+        top: 0;
+        left: 0;
     }
 }
 
@@ -32,29 +63,49 @@
     text-transform: capitalize;
     font-weight: 700;
     color: $_title_subtitle;
+    line-height: 28px;
     text-align: left;
     margin-bottom: 17px;
+    @media (max-width:1024px){
+        font-size: 18px;
+        line-height: 21px;
+        margin-bottom: 22px;
+    }
 }
 
 .people-card__profession{
     font-family: 'Raleway';
     font-size: $_title_subtitle;
+    line-height: 21px;
     text-transform: uppercase;
     font-weight: 400;
     color: $_button_active;
     text-align: left;
     margin-bottom: 18px;
+    @media (max-width:1024px){
+        font-size: 14px;
+        line-height: 16px;
+    }
 }
 
 .people-card__info{
     margin-bottom: 38px;
+    flex-grow: 1;
     p {
         font-family: 'Raleway';
         font-size: $_title_subtitle;
+        line-height: 21px;
         font-weight: 400;
         color: $_desc_card;
         text-align: left;
+    @media (max-width:1024px){
+        font-size: 14px;
+        line-height: 16px;
     }
+    }
+// @media (max-width:1024px){
+//     margin-bottom: 37px;
+// }
 }
 
 .people-card__some{
@@ -62,15 +113,28 @@
     .people-card__icon{
         display: block;
         width: 39px;
-        height: 39px;
-        // overflow: hidden;
+        aspect-ratio: 1/1;
+        overflow: hidden;
         margin-right: 6px;
+        position: relative;
+        transition: opacity .4s ease-out;
     &:last-child{
         margin-right: 0;
+    }
+    &:hover{
+        transform: scale(1.1);
+    }
+    &:active{
+        transform: scale(0.95);
     }
     img{
         width: 100%;
         height: 100%;
+        object-fit: cover;
+        object-position: center;
+        position: absolute;
+        top: 0;
+        left: 0;
     }
     }
 }
