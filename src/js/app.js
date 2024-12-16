@@ -1,5 +1,12 @@
-let user = {
-    name: "bob",
-    age: 41
-}
-console.log(user)
+var swiper = new Swiper(".mySwiper", {
+    spaceBetween: 30,
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    pagination: {
+      el: ".swiper-pagination",
+    },
+    mousewheel: true,
+    keyboard: true,
+  });
