@@ -1,0 +1,118 @@
+.footer-main{
+    width: 100%;
+    padding: 71px 0;
+    background-color: $_footer;
+    @media (max-width:1024px){
+        padding: 46px 0;
+    }
+    @media (max-width:575px) {
+        padding: 34px 0;
+    }
+}
+
+.footer-end{
+    width: 100%;
+    padding: 24px 0;
+    background-color: $_footer_end;
+    @media (max-width:1024px){
+        padding: 14px 0;
+    }
+    @media (max-width:575px){
+        padding: 29px 0;
+    }
+}
+
+.footer-main__info{
+    margin: 0 -15px;
+    display: flex;
+    justify-content: space-between;
+    @media (max-width:575px){
+         flex-wrap: wrap;
+         align-items: center;
+         justify-content: center;
+    }
+}
+
+.footer-main__dot{
+    margin: 0 15px;
+    width: 370px;
+    .footer-main__title{
+        font-family: 'Raleway';
+        font-size: $_footer_title_desc;
+        text-transform: uppercase;
+        color: $_white;
+        font-weight: 700;
+        line-height: 21px;
+        text-align: center;
+        margin-bottom: 29px;
+    @media (max-width:1024px){
+        font-size: 14px;
+        line-height: 16px;
+    }
+    }
+    .footer-main__desc p{
+        font-family: 'Raleway';
+        font-size: $_footer_title_desc;
+        text-transform: capitalize;
+        color: $_white;
+        font-weight: 400;
+        line-height: 21px;
+        text-align: center;
+    @media (max-width:1024px) {
+        font-size: 14px;
+    }
+    }
+    @media (max-width:1024px){
+        max-width: 315px;
+    }
+    @media (max-width:575px){
+        max-width: 280px;
+        margin-bottom: 69px;
+    &:last-child{
+        margin-bottom: 0;
+    }
+    }
+}
+
+.footer-main__list{
+    display: flex;
+    justify-content: center;
+    .footer-main__item{
+        margin-right: 27px;
+    &:last-child{
+        margin-right: 0;
+    }
+    }
+}
+
+.footer-main__img img{
+    @include img_icon;
+}
+
+.footer-end__desc{
+    width: 400px;
+    margin: auto;
+    p{
+        font-family: 'Raleway';
+        font-size: $_footer_title_desc;
+        text-transform: capitalize;
+        color: $_footer_end_text;
+        font-weight: 370;
+        line-height: 21px;
+        text-align: center;
+        .footer-end__link{
+            color: $_white;
+            transition: all .3s ease-out;
+        &:hover{
+            color: $_button_active;
+        }
+        }
+        @media (max-width: 575px) {
+            font-size: 14px;
+            line-height: 16px;
+        }
+    }
+    @media (max-width:575px) {
+        max-width: 280px;
+    }
+}
