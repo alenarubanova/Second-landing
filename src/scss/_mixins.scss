@@ -19,3 +19,25 @@
         background-color: $_button_icon;
     }
 }
+
+@mixin card_title{
+    font-family: 'Raleway';
+    font-size: $_card_title;
+    font-weight: 900;
+    color: $_title_subtitle_color;
+    text-transform: uppercase;
+    line-height: 21px;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 43px;
+}
+
+@mixin card_subtitle{
+    font-family: 'Raleway';
+    font-size: $_title_subtitle;
+    font-weight: 400;
+    color: $_desc_card;
+    line-height: 16px;
+    text-align: center;
+}
+
