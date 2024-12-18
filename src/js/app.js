@@ -17,10 +17,10 @@ var swiper = new Swiper(".mySwiper", {
   
   navBtn.onclick = () => {
     if (nav.classList.toggle('open')){
-      navBtnImg.src = './img/headerImg/backgroundHeader.png';
-      document.body.classList.add('no-scroll'); // Блокировка скролла
+      navBtnImg.src = '../img/headerImg/navOpen.png';
+      document.body.classList.add('no-scroll'); 
     } else {
-      navBtnImg.src = './img/headerImg/headerOpen.png';
-      document.body.classList.remove('no-scroll'); // Разблокировка скролла
+      navBtnImg.src = '../img/headerImg/headerOpen.png';
+      document.body.classList.remove('no-scroll'); 
     }
   }
