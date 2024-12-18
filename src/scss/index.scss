@@ -1,6 +1,7 @@
 @import './variables';
 @import './fonts';
 @import './mixins';
+@import './header.scss';
 @import './advantages.scss';
 @import './gallery.scss';
 @import './people.scss';
@@ -20,7 +21,7 @@
     margin: 0 auto;
     padding: 0 15px;
     position: relative;
-    z-index: 1;
+    z-index: 3;
     @media (max-width: 1200px) { 
         max-width: 970px;
     }
