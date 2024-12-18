@@ -17,6 +17,9 @@
         background-color: rgba(37, 43, 73, .85);
         z-index: 2;
     }
+    @media (max-width:1024px){
+        padding: 21px 0 126px;
+    }
     @media (max-width: 575px) {
         padding: 21px 0 52px;
     }
@@ -25,11 +28,23 @@
 
 
 .header-nav{
+    position: relative;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 80px;
-    // исправить потом
+    margin-bottom: 31px;
+    @media (max-width: 575px) {
+        margin-bottom: 79px;
+    }
+}
+
+.header-line{ 
+    border: 1px solid $_white;
+    max-width: 1170px;
+    margin-bottom: 143px;
+    @media (max-width: 575px) {
+        display: none;
+    }
 }
 
 .logo img{
@@ -38,7 +53,7 @@
     @media (max-width: 1024px) {
         max-width: 170px;
     }
-    @media (max-width: 1024px) {
+    @media (max-width: 575px) {
         max-width: 100px;
     }
 }
@@ -80,6 +95,14 @@
     border: 1px solid #BABBC5;
 }
 
+.nav-item a:active::after{
+    border: 1px solid #E71414;
+}
+
+.nav-item a:active{
+    color: #E71414;
+}
+
 .header-content{
     max-width: 1170px;
     margin: auto;
@@ -102,6 +125,7 @@
         line-height: 56px;
      }
     @media (max-width: 575px) {
+        margin-bottom: 60px;
         font-size: 36px;
         line-height: 42px;
     }
@@ -109,8 +133,13 @@
 
 .header-desc {
     margin-bottom: 80px;
+    max-width: 1170px;
+    @media (max-width:1024px){
+        max-width: 900px;
+        margin-bottom: 50px;
+    }
     @media (max-width: 575px) {
-        margin-bottom: 49px;
+        margin-bottom: 60px;
     }
 }
 
@@ -146,7 +175,7 @@
     @media (max-width: 320px){
         font-size: 20px;
         max-width: 279px;
-        padding: 31px 58px;
+        padding: 19px 58px;
     }
 }
 
@@ -174,10 +203,10 @@
         row-gap: 50px;
     }
     .nav-button{
-        position: fixed;
+        position: absolute;
         z-index: 5;
-        top: 21px;
-        right: 47px;
+        top: 0;
+        right: 0;
     }
 }
 
